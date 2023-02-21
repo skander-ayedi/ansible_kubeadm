@@ -9,6 +9,7 @@ sudo apt install openssh-server
 sudo swapoff -a
 sudo modprobe br_netfilter
 sudo sysctl -p /etc/sysctl.conf
+sudo echo 1 > /proc/sys/net/ipv4/ip_forward
 
 echo "Installation complete"
 
